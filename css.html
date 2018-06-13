@@ -6,15 +6,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./assets/css/main.css">
 </head>
 
 <body>
     <h1>Основы CSS</h1>
 
+    <h2>БЭМ нотация</h2>
+    .block-name__element-name--mod-name
+    <ul class="list">
+        <li class="list__item list__item--active">1</li>
+        <li class="list__item">2</li>
+        <li class="list__item">3</li>
+    </ul>
+
     <h2>Введение</h2>
-    <img src="" alt="Схема правила">
+    CSS предназначен для стилизации html-документа.
+    Стили подключаются к html-документу при помощи<xmp><link rel="stylesheet" type="text/css" href="ссылка на файл-стилей"></xmp>c
+    <img src="./assets/images/selector.png" alt="Схема правила">
     
-    <h2>Селектор</h2>
+    <h2 style="color: green">Селектор</h2>
+    Селектор по тегу (img)
+    Селектор по идентификатору (#id)
+    Селектор по классу(.class) 
+    Селектор по наличию нескольких классов (.class1.class2) 
+    Селектор "всё"  (*)
+    Селектор вложенности (parent child)
+    Селектор прямого потомка (parent>child)
+    Селектор "следующий" (+)
+    Селектор "следующие" (~)
+    Селектор по атрибуту ([attr], [attr="value"], [attr^="value"], [attr$="value"], [attr*="value"], [attr~="value"], [attr|="value"])
+    Без селекторов
+
+    <table><tr>
+        <td>style</td>
+        <td>1000</td>
+    </tr>
+    <tr>
+        <td>#id</td>
+        <td>0100</td>
+    </tr>
+    <tr>
+        <td>.class</td>
+        <td>0010</td>
+    </tr>
+    <tr>
+        <td>[attr]</td>
+        <td>0010</td>
+    </tr>
+    <tr>
+        <td>TAG</td>
+        <td>0001</td>
+    </tr>
+    <tr>
+        <td>*</td>
+        <td>0000</td>
+    </tr></table>
+
+    #id .class[disabled] a =  0121
+
     <h2>Псевдокласссы</h2>
     <h2>Псевдоэлементы</h2>
     <h2>Свойства в теле селектора</h2>
