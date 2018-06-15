@@ -1,4 +1,15 @@
 *{
-    color: red;
-    
+    color: #191970;
+    background: #F8F8FF;
+    opacity: 0.9;   
+    font-family: 'Roboto-Thin'; 
+}
+
+@font-face {
+    font-family: 'Roboto-Thin';
+    src: url("../fonts/Roboto-Thin.ttf") format("ttf");
+}
+
+html, body {
+    font-family: 'Roboto-Thin';
 }
