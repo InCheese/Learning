@@ -21,70 +21,90 @@
     </ul>
 
     <h2>Введение</h2>
-    CSS предназначен для стилизации html-документа.
-    Стили подключаются к html-документу при помощи<xmp><link rel="stylesheet" type="text/css" href="ссылка на файл-стилей"></xmp>c
+    CSS предназначен для стилизации html-документа. Стили подключаются к html-документу при помощи
+    <xmp>
+        <link rel="stylesheet" type="text/css" href="ссылка на файл-стилей">
+    </xmp>c
     <img src="./assets/images/selector.png" alt="Схема правила">
-    
+
     <h2 style="color: green">Селектор</h2>
-    Селектор по тегу (img)
-    Селектор по идентификатору (#id)
-    Селектор по классу(.class) 
-    Селектор по наличию нескольких классов (.class1.class2) 
-    Селектор "всё"  (*)
-    Селектор вложенности (parent child)
-    Селектор прямого потомка (parent>child)
-    Селектор "следующий" (+)
-    Селектор "следующие" (~)
-    Селектор по атрибуту ([attr], [attr="value"], [attr^="value"], [attr$="value"], [attr*="value"], [attr~="value"], [attr|="value"])
-    Вес селекторов
+    Селектор по тегу (img) Селектор по идентификатору (#id) Селектор по классу(.class) Селектор по наличию нескольких классов
+    (.class1.class2) Селектор "всё" (*) Селектор вложенности (parent child) Селектор прямого потомка (parent>child) Селектор
+    "следующий" (+) Селектор "следующие" (~) Селектор по атрибуту ([attr], [attr="value"], [attr^="value"], [attr$="value"],
+    [attr*="value"], [attr~="value"], [attr|="value"]) Вес селекторов
 
-    <table><tr>
-        <td>style</td>
-        <td>1000</td>
-    </tr>
-    <tr>
-        <td>#id</td>
-        <td>0100</td>
-    </tr>
-    <tr>
-        <td>.class</td>
-        <td>0010</td>
-    </tr>
-    <tr>
-        <td>[attr]</td>
-        <td>0010</td>
-    </tr>
-    <tr>
-        <td>TAG</td>
-        <td>0001</td>
-    </tr>
-    <tr>
-        <td>*</td>
-        <td>0000</td>
-    </tr></table>
+    <table>
+        <tr>
+            <td>style</td>
+            <td>1000</td>
+        </tr>
+        <tr>
+            <td>#id</td>
+            <td>0100</td>
+        </tr>
+        <tr>
+            <td>.class</td>
+            <td>0010</td>
+        </tr>
+        <tr>
+            <td>[attr]</td>
+            <td>0010</td>
+        </tr>
+        <tr>
+            <td>TAG</td>
+            <td>0001</td>
+        </tr>
+        <tr>
+            <td>*</td>
+            <td>0000</td>
+        </tr>
+    </table>
 
-    #id .class[disabled] a =  0121
-
-    Псевдокласссы (w3schools.com)
-    Псевдоэлементы (w3schools.com)
-    Свойства в теле селектора
-        Еденицы измерения (px, %, rem, em, vh, vw, vmin, vmax)
-        Позиционирование (static, relative, absolute)
-        Поведение(display:block | inline-block | inline | flex | grid)
-        Отступы (padding, margin)
-        Бордер/Обводка (border, border-radius)
-        Фон (background, image, size, position, repeat)
-        Тень (box-shadow)
-    Шрифты (@font-family, font-size, font-weight, color, line-height)
-    Анимация / переходы (animation, transition)
-    Transform
-    Респонсив / Адаптив (Медиа-запросы)
+    #id .class[disabled] a = 0121 Псевдокласссы (w3schools.com) Псевдоэлементы (w3schools.com) Свойства в теле селектора Еденицы
+    измерения (px, %, rem, em, vh, vw, vmin, vmax) Позиционирование (static, relative, absolute) Поведение(display:block
+    | inline-block | inline | flex | grid) Отступы (padding, margin) Бордер/Обводка (border, border-radius) Фон (background,
+    image, size, position, repeat) Тень (box-shadow) Шрифты (@font-family, font-size, font-weight, color, line-height) Анимация
+    / переходы (animation, transition) Transform Респонсив / Адаптив (Медиа-запросы)
     <h2>Полезные сервисы</h2>
-        https://cssreference.io/property/font-size/ (Интерактивный справочник свойств)
-        http://htmlbook.ru/css (Справочник)
-        https://www.w3schools.com/ (Справочник)
-        https://css-tricks.com/ (Справочник + часто встречающиеся решения)
-        https://caniuse.com/ (Сервис позволяющий проверить на кроссбраузерность какое либо свойство css)
+    https://cssreference.io/property/font-size/ (Интерактивный справочник свойств) http://htmlbook.ru/css (Справочник) https://www.w3schools.com/
+    (Справочник) https://css-tricks.com/ (Справочник + часто встречающиеся решения) https://caniuse.com/ (Сервис позволяющий
+    проверить на кроссбраузерность какое либо свойство css)
+
+    <div>
+        <h2>transform</h2>
+        <div class=wrapper__transform>
+            <div class="block__transform block__transform--translate"></div>
+        </div>
+        <div class="wrapper__transform">
+            <div class="block__transform block__transform--scale"></div>
+        </div>
+        <div class="wrapper__transform">
+            <div class="block__transform block__transform--rotate"></div>
+        </div>
+        <div class="wrapper__transform">
+            <div class="block__transform block__transform--skew"></div>
+        </div>
+        <div class="wrapper__transform">
+            <div class="block__transform block__transform--multi"></div>
+        </div>
+    </div>
+
+
+
+    <div>
+        <h2>transition</h2>
+        <p>Реагирует на наведение курсора</p>
+        <div class="block__transition"></div>
+    </div>
+
+    <div>
+        <h2>animation</h2>
+        <p>Так выглядит анимация</p>
+        <div class="block__element--animation"></div>
+    </div>
+    <br>
+    <a href="./index.html">Главное меню</a>
 </body>
+
 
 </html>

@@ -1,9 +1,13 @@
 *{
-    color: #191970;
+    color: black;
     background: #F8F8FF;
     opacity: 0.9;   
     font-family: 'Roboto-Thin'; 
 }
+@keyframes rotate{
+    from{transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
+  }
 
 @font-face {
     font-family: 'Roboto-Thin';
@@ -12,4 +16,66 @@
 
 html, body {
     font-family: 'Roboto-Thin';
+
 }
+h1{
+    font-style: inherit;
+}
+
+.block__transition  {
+    background: green;
+    height: 100px;
+    width: 100px;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-delay: 1000ms;
+    transition-timimg-function: ease-in;
+   }
+  .block__transition:hover{
+    transform: translateX(1000px);
+    background: blue;
+    color: white;
+  }
+
+   
+  .block__element--animation{
+    height: 100px;
+    width: 100px;
+    background: yellow;
+    animation-name: rotate;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+    
+  }
+
+  .wrapper__transform{
+    border: 1px dashed;
+    margin-bottom: 50px;
+    margin-right: 60px;
+    display: inline-block;  
+  }
+  
+  .block__transform {
+    height: 100px;
+    width: 100px;
+    background: #123;
+  }
+  .block__transform--translate{
+    transform: translate(10px, 20px);
+  }
+  .block__transform--scale{
+    transform: scale(0.5, 0.7);
+  }
+  
+  .block__transform--rotate{
+    transform: rotate(50deg);
+  }
+  
+  .block__transform--skew{
+    transform: skew(45deg, -10deg);
+  }
+  
+  .block__transform--multi{
+    transform: translate(10px, 20px) scale(0.5, 0.7) rotate(50deg) skew(45deg, -10deg);
+  }
