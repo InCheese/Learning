@@ -1,21 +1,24 @@
-*{
-    color: black;
-    background: #F8F8FF;
-    opacity: 0.9;   
-    font-family: 'Roboto-Thin'; 
-}
 @keyframes rotate{
     from{transform: rotate(0deg);}
     to{transform: rotate(360deg);}
   }
 
 @font-face {
-    font-family: 'Roboto-Thin';
-    src: url("D:/Git_projects/learning/Learning/assets/fonts/Roboto-Thin.ttf") format("ttf");
+    font-family:"Roboto-Thin"; 
+    src:url('../fonts/Roboto-Thin.ttf') 
+    }
+
+
+*{
+    color: black;
+    background: #F8F8FF;
+    opacity: 0.9;   
+    font-family:Arial; 
 }
 
+
 html, body {
-    font-family: 'Roboto-Thin';
+    font-family:Arial;
 
 }
 h1{
