@@ -25,6 +25,21 @@ h1{
     font-style: inherit;
 }
 
+h2  {
+  color: #191970;
+  font-style: italic;
+}
+
+
+.general_page   {
+  background-image: url(../images/mountains.jpg);
+}
+
+.css_body   {
+  background-image: url(../images/field.jpg);
+}
+
+
 .block__transition  {
     background: green;
     height: 100px;
