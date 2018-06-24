@@ -1,0 +1,74 @@
+@font-face {
+    font-family:"Raleway-Regular"; 
+    src:url('../fonts/Raleway-Regular.ttf');
+    font-style: normal;
+
+    }
+
+@font-face{
+        font-family: "Raleway-ExtraBold";
+        src: url('../fonts/Raleway-ExtraBold.ttf');
+        font-style: bold;
+
+    }
+    @font-face{
+        font-family: "Raleway-Medium";
+        src: url('../fonts/Raleway-Medium.ttf');
+    }
+
+    @font-face{
+        font-family: "Montserrat-Light.";
+        src: url('../fonts/Montserrat-Light.ttf');
+    }
+
+
+.header  {
+    display: flex; 
+    flex-direction: row;
+         
+}
+
+.menu__element {
+    font-family: 'Raleway-Regular';
+    margin: 30px;  
+}
+
+
+
+.logo {
+    font-family: 'Raleway-Regular';
+    font-size: 34px;
+    
+}
+
+.content1{
+    display: flex;
+    
+    justify-content: center; 
+}
+
+
+.slogan{
+    text-align: center;
+}
+
+.slogan__element1{
+    font-family: 'Raleway-Medium';
+    font-size: 36px;
+    
+}
+
+.slogan__element2{
+    font-family: 'Raleway-ExtraBold';
+    font-size: 52px;
+}
+.slogan__element3{    
+    font-family: 'Montserrat-Light.';
+    font-size: 16px;
+}
+
+.button__element{
+    font-family: 'Raleway-ExtraBold';
+    font-size: 14px;
+    text-transform: uppercase;
+}
