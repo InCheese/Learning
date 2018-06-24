@@ -27,6 +27,9 @@
     flex-direction: row;
          
 }
+.menu {
+    display: flex;
+}
 
 .menu__element {
     font-family: 'Raleway-Regular';
