@@ -21,10 +21,10 @@
         src: url('../fonts/Montserrat-Light.ttf');
     }
 
-
-.header  {
+.header  {    
     display: flex; 
     flex-direction: row;
+
          
 }
 .menu {
@@ -44,34 +44,29 @@
     
 }
 
-.content1{
-    display: flex;
-    
-    justify-content: center; 
+.banner{
+    position: relative;
+    min-height: 100vh;
+    background-image: url(../images/background1.jpg);
 }
 
+.slider{
 
-.slogan{
-    text-align: center;
 }
 
-.slogan__element1{
-    font-family: 'Raleway-Medium';
-    font-size: 36px;
-    
+.slider__nav{
+
+
 }
 
-.slogan__element2{
-    font-family: 'Raleway-ExtraBold';
-    font-size: 52px;
-}
-.slogan__element3{    
-    font-family: 'Montserrat-Light.';
-    font-size: 16px;
+.slider__pagination{
+
 }
 
-.button__element{
-    font-family: 'Raleway-ExtraBold';
-    font-size: 14px;
-    text-transform: uppercase;
+.sliader__items{
+
+}
+
+.sliader__item{
+
 }
