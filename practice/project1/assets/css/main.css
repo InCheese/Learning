@@ -17,37 +17,58 @@
     }
 
     @font-face{
-        font-family: "Montserrat-Light.";
+        font-family: "Montserrat-Light";
         src: url('../fonts/Montserrat-Light.ttf');
     }
 
 .header  {    
     display: flex; 
     flex-direction: row;
-
-         
+    color: white;  
+    padding-top: 50px;       
 }
+
 .menu {
-    display: flex;
+    display: flex;    
+    margin-left: 218px;
+    font-size: 12px;
+    
 }
 
 .menu__element {
-    font-family: 'Raleway-Regular';
-    margin: 30px;  
+    font-family: 'Montserrat-Light';
+    padding-right: 14px;  
 }
 
-
+.menu__element.menu__element--active{
+    color:#928575;
+}
 
 .logo {
     font-family: 'Raleway-Regular';
     font-size: 34px;
-    
+    margin-left: 2px;          
+}
+
+.logo-img{
+    height: 36px;
+    width: 48px;
+    margin-left: 378px;
 }
 
 .banner{
     position: relative;
     min-height: 100vh;
     background-image: url(../images/background1.jpg);
+    color: white;
+    font-family: "Montserrat-Light";
+    
+}
+.banner h1{
+    font-family:"Raleway-ExtraBold";
+}
+.banner h2{
+    font-family:"Raleway-Medium";
 }
 
 .slider{
