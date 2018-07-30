@@ -283,6 +283,7 @@ button {
 }
 
 .footer_services{
+    display: flex;
     background-color: #3e3028;
     font-family: "Montserrat-Light";
     color: #c0b199;  
@@ -302,4 +303,7 @@ button {
     color: #c0b199; 
 }
 
+.footer_services__element button{
+	margin-left: 300px;
+}
 
