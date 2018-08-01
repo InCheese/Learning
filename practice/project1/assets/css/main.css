@@ -192,6 +192,7 @@ button {
     border-color: #928575;
     box-shadow: none;
     cursor: pointer;
+    border: 0;
 }
 
 @media (max-width: 576px) {
@@ -282,6 +283,36 @@ button {
     font-size: 36px;
 }
 
+.services_browsers{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    
+}
+.services_browser_left{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 7;
+    background-color: green;
+}
+
+.services_browser_right{
+    grid-column-start: 3;
+    grid-column-end: 6;
+    grid-row-start: 2;
+    grid-row-end: 7;
+    background-color: blueviolet;
+}
+
+.services_browser_center{
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 7;
+    background-color:yellow;
+}
+
 .footer_services{
   display: flex;
     background-color: #3e3028;
@@ -344,6 +375,14 @@ border: 0;
 .projects_menu__element--active button{
 background-color: #928575;
 color: white;
+}
+
+.latest_projects{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-row-gap: 30px;
 }
 
 
