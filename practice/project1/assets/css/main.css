@@ -387,3 +387,42 @@ color: white;
     cursor: pointer;
 }
 
+.footer_projects{      
+    display: flex;
+    justify-content: center;
+    padding-bottom: 80px;       
+}
+
+.video_presentation{
+    height: 705px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;    
+    color: white;
+    background-image: url(../images/background_video_pres.jpg);    
+    font-family: "Montserrat-Light";    
+}
+.video_presentation__element{
+    padding-top: 30px;
+    padding: 20px;
+}
+
+.video_presentation__element h2{
+    font-size: 24px;
+    padding: 10px;
+}
+
+.video_presentation__element:first-child{
+    padding-top: 100px;
+    cursor: pointer;
+}
+
+.mobile_device{
+    height: 695px;
+    display: grid;
+   grid-template-columns: 10;       
+    background-image: url(../images/background_mobile.jpg);    
+    font-family: "Montserrat-Light"; 
+}
