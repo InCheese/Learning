@@ -235,6 +235,7 @@ button {
     color: #555555;
     font-family: 'Montserrat-Light';
     font-size: 14px;    
+    cursor: pointer;
 }
 .menu_services__element img{
     height: 50px;
@@ -383,6 +384,6 @@ color: white;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-row-gap: 30px;
+    cursor: pointer;
 }
-
 
