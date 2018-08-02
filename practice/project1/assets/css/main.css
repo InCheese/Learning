@@ -414,6 +414,10 @@ color: white;
     padding: 10px;
 }
 
+.time{
+    color: #928575;
+}
+
 .video_presentation__element:first-child{
     padding-top: 100px;
     cursor: pointer;
@@ -422,9 +426,39 @@ color: white;
 .mobile_device{
     height: 695px;
     display: grid;
-    grid-template-columns: 10;       
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: repeat(4, 1fr);      
     background-image: url(../images/background_mobile.jpg);    
     font-family: "Montserrat-Light"; 
     padding: 20px;
-    text-align: center;
+    font-family: 'Montserrat-Light';
+    padding-right: 14px;
+}
+
+.mobile_device__element{
+    padding-right: 385px; 
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;    
+}
+
+.mobile_device__element h1{
+    font-family: 'Raleway-SemiBold';
+    font-size: 24px;
+}
+
+.mobile_device_list{
+    padding-right: 385px; 
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;    
+    display: block;
+    grid-template-columns: repeat(2, 1fr 5fr); 
+    grid-template-rows: repeat(4, 1fr);   
+}
+
+.mobile_device_list__element{
+    background-color: blue;
 }
