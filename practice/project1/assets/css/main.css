@@ -422,7 +422,9 @@ color: white;
 .mobile_device{
     height: 695px;
     display: grid;
-   grid-template-columns: 10;       
+    grid-template-columns: 10;       
     background-image: url(../images/background_mobile.jpg);    
     font-family: "Montserrat-Light"; 
+    padding: 20px;
+    text-align: center;
 }
