@@ -387,6 +387,11 @@ color: white;
     cursor: pointer;
 }
 
+.latest_project__element{
+    padding-left: 90px;
+    padding-right: 90px;
+}
+
 .footer_projects{      
     display: flex;
     justify-content: center;
@@ -449,16 +454,40 @@ color: white;
 }
 
 .mobile_device_list{
+    display: grid;
     padding-right: 385px; 
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 3;
     grid-row-end: 4;    
-    display: block;
     grid-template-columns: repeat(2, 1fr 5fr); 
     grid-template-rows: repeat(4, 1fr);   
 }
 
 .mobile_device_list__element{
-    background-color: blue;
+    font-size: 12px;
+    display: inline;
+}
+
+.statistics{
+    display: flex;
+    background-color: #2a2421;
+    color: #c0b199;
+    font-family: 'Montserrat-Light';
+    padding-right: 14px;
+    text-transform: uppercase;
+}
+
+.statistics__element{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.statistics_number{
+    font-size: 36px;
+    color: white;
+}
+.statistics_line{
+    color: white;
 }
